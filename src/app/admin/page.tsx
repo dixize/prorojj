@@ -19,7 +19,7 @@ export default async function AdminPage() {
   const projectDTOs: ProjectDTO[] = projects.map((p) => ({
     id: p.id, title: p.title, titleEn: p.titleEn, description: p.description,
     descriptionEn: p.descriptionEn, category: p.category, categoryEn: p.categoryEn,
-    url: p.url, visual: p.visual, sortOrder: p.sortOrder,
+    url: p.url, visual: p.visual, imageUrl: p.imageUrl, sortOrder: p.sortOrder,
   }));
 
   return (
